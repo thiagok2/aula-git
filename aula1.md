@@ -5,10 +5,10 @@
 Criar um projeto. Sugestão aula-git.
 
 ## Instalar extensões no VSCode
- 1. aguardar um pouco
- 2. instalar depois para instalar quem tem mais de 10mi de downloads
+ 1. Aguardar um pouco
+ 2. Instalar depois para instalar quem tem mais de 10mi de downloads
 
-## Inicializar umm projeto com git - git init
+## Criar/Inicializar umm projeto com git - git init
 
 Rodar no terminal
 
@@ -35,4 +35,18 @@ O * é um coringa para adicionar tudo
 Para persistir as mudanças, usamos o comando:
 ```sh
 git commit -m 'feat-novo documento da aula'
+```
+## Criar um repositório no github
+
+Uma vez criado o repositório no gitlab, ele vai sugerir diversos comandos que já executamos(git init, git add, git commit).
+
+Vamos executar então o comando que vai parear e renomear nossa branch principal para main. Padrão atual github. Localmente estavamos com a branch principal chamada de master.
+
+```sh
+git branch -M main
+```
+
+O comando a seguir vai configurar o remote:
+```sh
+git remote add origin https://github.com/thiagok2/aula-git.git
 ```
