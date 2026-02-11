@@ -92,7 +92,9 @@ E então fazer push:
 git push origin main
 ```
 
-Ainda assim, podem haver erros FATAIS. Que podem ser devido a um desalinhamento/divergência das branchs, histórias não relacionadas
+#### Caso receba a mensagem de branchs divergentes, vamos fazer o rebase
+
+Ainda assim, podem haver erros FATAIS. Que podem ser devido a um desalinhamento/divergência das branchs, histórias não relacionadas.
 
 Como resolver:
 ```sh
