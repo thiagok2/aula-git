@@ -51,20 +51,50 @@ git branch -M main
 
 O comando a seguir vai configurar o remote:
 ```sh
-git remote add origin https://github.com/thiagok2/aula-git.git
+git remote add origin https://github.com/SEUUSUARIO/SEUREPOSITORIO.git
 ```
 
-Uma vez setado, vamos fazer o push
+Feito isso, para enviar definitivamente seus arquivos para o github execute:
 
-```
+```sh
 git push origin main
 ```
 
-# Em caso de problemas
+# Possíveis problemas:
 
-Caso tenha problemas de permissão, ir para o arquivo
-aula1-config-token.md
+## Necessidade de definir user.name e user.email 
 
 
-# Baixar o projeto em outro local
-Clonar o projeto com o conteúdo do arquivo aula1-clone.md
+### Configurar usuário e token
+
+Ir para o conteúdo da aula1-config-token.
+
+### Problema de branchs divergentes e histórias não relacionadas
+
+**Repositórios com trabalhos desalinhados**
+
+Há trabalhos/arquivos/modificações no repositório remoto e não estão localmente.
+Para trazer o trabalho(arquivos, mudanças) do remoto, execute:
+
+```sh
+git pull origin main
+```
+
+Obs.: Para fazer um pull é necessário que nâo haja código a ser commitado. Logo, será necessário executar:
+
+```sh
+git add *
+git commit -m 'finalizando tarefa'
+```
+
+E então fazer push:
+```sh
+git push origin main
+```
+
+Ainda assim, podem haver erros FATAIS. Que podem ser devido a um desalinhamento/divergência das branchs, histórias não relacionadas
+
+Como resolver:
+```sh
+git config pull.rebase true
+```

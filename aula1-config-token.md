@@ -1,4 +1,27 @@
-# USAR O TOKEN / CRIAR TOKEN
+# Configurar usuário / Criar e configurar TOKEN
+
+## Configurar usuário local
+Boa prática é definir o usuário e email do seu usuário localmente. As vezes o git pode apontar erro ou passar a informação de outro usuário ao github.
+
+Consultando configuração atual
+```sh
+git config user.email
+git config user.name
+```
+
+Vamos alterar o nome do usuário - garantir que seja seu usuário/email configurado. Configurando local.
+```sh
+git config --local user.email "thiagok2@gmail.com"
+git config --local user.name "thiagok2"
+```
+
+Obs.: Se a máquina for sua user o parâmetro --global
+```sh
+git config --global user.email "thiagok2@gmail.com"
+git config --global user.email "thiagok2"
+```
+
+## Criando Token e configurando no projeto
 
 0. No github
 
@@ -22,11 +45,3 @@ git remote set-url origin https://SEUTOKEN@github.com/SEUUSUARIO/SEUREPOSITORIO
 ```sh
 git push -u origin main
 ```
-
-5. Vamos alterar o nome do usuário - garantir que seja seu usuário/email configurado. Configurando local.
-
-git config user.email "thiagok2@gmail.com"
-git config user.name "thiagok2"
-
-Obs.: Se a máquina for sua user o parâmetro --global
-git config --globaluser.email "thiagok2@gmail.com"
