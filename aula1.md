@@ -36,6 +36,7 @@ O * é um coringa para adicionar tudo
 ## Persistir mudanças LOCALMENTE - git commit
 
 Para persistir as mudanças, usamos o comando:
+
 ```sh
 git commit -m 'feat-novo documento da aula'
 ```
@@ -63,7 +64,25 @@ git push origin main
 # Possíveis problemas:
 
 ## Necessidade de definir user.name e user.email 
+Boa prática é definir o usuário e email do seu usuário localmente. As vezes o git pode apontar erro ou passar a informação de outro usuário ao github.
 
+Consultando configuração atual
+```sh
+git config user.email
+git config user.name
+```
+
+Vamos alterar o nome do usuário - garantir que seja seu usuário/email configurado. Configurando local.
+```sh
+git config --local user.email "thiagok2@gmail.com"
+git config --local user.name "thiagok2"
+```
+
+Obs.: Se a máquina for sua user o parâmetro --global
+```sh
+git config --global user.email "thiagok2@gmail.com"
+git config --global user.email "thiagok2"
+```
 
 ### Configurar usuário e token
 
